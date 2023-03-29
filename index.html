@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo For Serach Bar</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="inner-container flex-container">
+            <h1 class="sr-only">Compony name</h1>
+            <img src="img/logo.jpg" alt="Company Logo">
+            <button>Menu</button>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+                <form action="#" method="get" name="search" role="search">
+                    <label class="sr-only" for="search">Search Bar</label>
+                    <input type="text" name="search" id="search" placeholder="search">
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="inner-container">
+            <section>
+                <h2>Log In</h2>
+                <form action="#" method="post" name="login">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" autocomplete="off" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Sign In">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
+
 </html>
